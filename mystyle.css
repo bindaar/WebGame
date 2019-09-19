@@ -1,4 +1,94 @@
-* {
+
+*{
     box-sizing: border-box;
+    
+    font-family: Arial, Helvetica, sans-serif
+    
+    
+  }
+
+ 
+  body {
+
+    color:black;
+    background-color:white; 
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0%;
+    margin-right: 30px;
+    padding: none;
+    position: fixed;
+    background-color: rgb(118, 134, 204);
+    width: 100%;
+   
+   
   }
   
+li {
+
+ 
+  float:left;
+}
+
+  li a {
+    
+    
+    color: #000;
+    padding: 4px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block; 
+    
+
+  }
+  
+  /* Zmiana linku po najechaniu */
+  li a:hover {
+    background-color: rgb(187, 194, 224);
+    color: white;
+  }
+
+  /* Zrezygnowalem z podswietlania aktywnej zakladki
+  
+  li a.active {
+    
+    color: white;
+  }
+
+  */
+  .grid-container {
+    display: grid;
+    grid-gap: 50px 20px; 
+    padding: none;
+    grid-template-columns: 7fr 1fr;
+    grid-template-areas:
+    "header header"
+    "content adverts"
+    "footer footer";
+  }
+  
+  header {
+    
+    grid-area: header; 
+    
+  }
+ 
+  
+  .content {
+     
+    grid-area: content;
+    text-align: center;
+  }
+
+  .adverts {
+       
+    grid-area: adverts;
+  }
+  
+  .footer {
+      
+    grid-area: footer;
+    
+  }
